@@ -14,7 +14,7 @@ struct PageTwo: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack{
-                Text("Godzilla town")
+                Text("Godzilla city")
                     .padding()
                     .font(.system(size: 40, weight: .medium))
                     .foregroundColor(.white)
