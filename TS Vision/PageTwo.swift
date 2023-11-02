@@ -12,12 +12,12 @@ struct PageTwo: View {
     @State private var IsDark = false
     var body: some View {
         ZStack{
-            BackgroundColor(TopColor: IsDark ? .black : .blue, BottomColor: IsDark ? .gray : .lBlue)
+            BackgroundColor(TopColor: IsDark ? .black : .blue, BottomColor: IsDark ? .dgray : .lBlue)
             
             VStack{
                 CityName(City: IsDark ? "Gotham City" : "Godzilla City")
                 
-                MainWeather(image: "Gojira", temp: IsDark ? "The hour has passed" : "The hour has come")
+                MainWeather(image: IsDark ? "SleepGojira" : "Gojira", temp: IsDark ? "The hour has passed" : "The hour has come")
                 
                 Spacer()
                 
