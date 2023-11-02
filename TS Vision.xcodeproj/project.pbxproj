@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070F02A82AF104340086A88B /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F02A72AF104340086A88B /* ButtonLabel.swift */; };
 		0751D6022AE77CB1002449D2 /* TS_VisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0751D6012AE77CB1002449D2 /* TS_VisionApp.swift */; };
 		0751D6042AE77CB1002449D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0751D6032AE77CB1002449D2 /* ContentView.swift */; };
 		0751D6062AE77CB2002449D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0751D6052AE77CB2002449D2 /* Assets.xcassets */; };
@@ -17,6 +18,8 @@
 		0751D62C2AE78443002449D2 /* PageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0751D62B2AE78443002449D2 /* PageTwo.swift */; };
 		075C797B2AEF96DC00D47AA6 /* WeatherComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075C797A2AEF96DC00D47AA6 /* WeatherComponent.swift */; };
 		07A368132AF0E46D005B0B8D /* MainWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A368122AF0E46D005B0B8D /* MainWeather.swift */; };
+		07A368152AF0E9A6005B0B8D /* CityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A368142AF0E9A6005B0B8D /* CityName.swift */; };
+		07AEA5FB2AF0F0410029CA76 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEA5FA2AF0F0410029CA76 /* BackgroundColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		070F02A72AF104340086A88B /* ButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabel.swift; sourceTree = "<group>"; };
 		0751D5FE2AE77CB1002449D2 /* TS Vision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TS Vision.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0751D6012AE77CB1002449D2 /* TS_VisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TS_VisionApp.swift; sourceTree = "<group>"; };
 		0751D6032AE77CB1002449D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 		0751D62B2AE78443002449D2 /* PageTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTwo.swift; sourceTree = "<group>"; };
 		075C797A2AEF96DC00D47AA6 /* WeatherComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherComponent.swift; sourceTree = "<group>"; };
 		07A368122AF0E46D005B0B8D /* MainWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeather.swift; sourceTree = "<group>"; };
+		07A368142AF0E9A6005B0B8D /* CityName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityName.swift; sourceTree = "<group>"; };
+		07AEA5FA2AF0F0410029CA76 /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,9 @@
 			children = (
 				075C797A2AEF96DC00D47AA6 /* WeatherComponent.swift */,
 				07A368122AF0E46D005B0B8D /* MainWeather.swift */,
+				07A368142AF0E9A6005B0B8D /* CityName.swift */,
+				07AEA5FA2AF0F0410029CA76 /* BackgroundColor.swift */,
+				070F02A72AF104340086A88B /* ButtonLabel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -274,11 +283,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				070F02A82AF104340086A88B /* ButtonLabel.swift in Sources */,
 				07A368132AF0E46D005B0B8D /* MainWeather.swift in Sources */,
 				075C797B2AEF96DC00D47AA6 /* WeatherComponent.swift in Sources */,
 				0751D6042AE77CB1002449D2 /* ContentView.swift in Sources */,
 				0751D62C2AE78443002449D2 /* PageTwo.swift in Sources */,
 				0751D6022AE77CB1002449D2 /* TS_VisionApp.swift in Sources */,
+				07A368152AF0E9A6005B0B8D /* CityName.swift in Sources */,
+				07AEA5FB2AF0F0410029CA76 /* BackgroundColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

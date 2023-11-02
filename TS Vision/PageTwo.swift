@@ -4,43 +4,36 @@
 //
 //  Created by Zayed Alshamsi on 24/10/2023.
 //
+//HLP
 
 import SwiftUI
 
 struct PageTwo: View {
+    @State private var IsDark = false
     var body: some View {
         ZStack{
-            LinearGradient(gradient: Gradient(colors: [.blue, .lBlue]), startPoint: .topLeading, endPoint: .bottomLeading)
-                .edgesIgnoringSafeArea(.all)
+            BackgroundColor(TopColor: IsDark ? .black : .blue, BottomColor: IsDark ? .gray : .lBlue)
             
             VStack{
-                Text("Godzilla city")
-                    .padding()
-                    .font(.system(size: 40, weight: .medium))
-                    .foregroundColor(.white)
-                    .padding()
+                CityName(City: IsDark ? "Gotham City" : "Godzilla City")
                 
-                MainWeather(image: "Gojira", temp: "The hour has come")
+                MainWeather(image: "Gojira", temp: IsDark ? "The hour has passed" : "The hour has come")
                 
                 Spacer()
                 
                 HStack(spacing: 25){
-                    WeatherComponent(day: "TUE", temp: 32, visual: "cloud.heavyrain.fill")
-                    WeatherComponent(day: "WED", temp: 69, visual: "sun.max.trianglebadge.exclamationmark.fill")
-                    WeatherComponent(day: "THU", temp: 12, visual: "wind.snow")
-                    WeatherComponent(day: "FRI", temp: 50, visual: "sun.max.trianglebadge.exclamationmark")
-                    WeatherComponent(day: "SAT", temp: 0, visual: "sparkles")
+                    WeatherComponent(day: "TUE", temp: IsDark ? 12 : 32, visual: IsDark ? "moon.fill" :  "cloud.heavyrain.fill")
+                    WeatherComponent(day: "WED", temp: IsDark ? 35 : 69, visual: IsDark ? "moon.haze.fill" : "sun.max.trianglebadge.exclamationmark.fill")
+                    WeatherComponent(day: "THU", temp: IsDark ? -5 : 12, visual: "wind.snow")
+                    WeatherComponent(day: "FRI", temp: IsDark ? 25 : 50, visual: IsDark ? "cloud.snow.fill" : "sun.max.trianglebadge.exclamationmark")
+                    WeatherComponent(day: "SAT", temp: IsDark ? -13 : 0, visual: IsDark ? "snowflake" : "sparkles")
                     }
                 Spacer()
                 Spacer()
                 Button{
-                    print("Tapped")
-                } label: {
-                     Text("Change time of day")
-                        .font(.system(size: 23, weight: .bold))
-                        .frame(width: 270 , height: 60)
-                        .background()
-                        .cornerRadius(14.0)
+                    IsDark.toggle()
+                                     } label: {
+                    ButtonLabel(ButtonName: "Change time of day", NameColor: .blue, BackgroundColor: .white)
 
                     
                 }
