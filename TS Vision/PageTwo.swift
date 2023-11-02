@@ -33,7 +33,7 @@ struct PageTwo: View {
                 Button{
                     IsDark.toggle()
                                      } label: {
-                    ButtonLabel(ButtonName: "Change time of day", NameColor: .blue, BackgroundColor: .white)
+                                         ButtonLabel(ButtonName: "Change time of day", NameColor: .blue, BackgroundColor: .white)
 
                     
                 }

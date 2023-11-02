@@ -17,7 +17,7 @@ struct WeatherComponent: View {
                 .font(.system(size: 15, weight: .medium))
                 .foregroundColor(.white)
             Image(systemName: "\(visual)")
-                .renderingMode(.original)
+                .symbolRenderingMode(.multicolor)
                 .resizable()
                 .frame(width: 40,height: 40)
                 .aspectRatio(contentMode: .fit)
