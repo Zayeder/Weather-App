@@ -20,6 +20,7 @@
 		07A368132AF0E46D005B0B8D /* MainWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A368122AF0E46D005B0B8D /* MainWeather.swift */; };
 		07A368152AF0E9A6005B0B8D /* CityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A368142AF0E9A6005B0B8D /* CityName.swift */; };
 		07AEA5FB2AF0F0410029CA76 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AEA5FA2AF0F0410029CA76 /* BackgroundColor.swift */; };
+		D901B4B02AF3568200670BD4 /* LikeDislike.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901B4AF2AF3568200670BD4 /* LikeDislike.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		07A368122AF0E46D005B0B8D /* MainWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeather.swift; sourceTree = "<group>"; };
 		07A368142AF0E9A6005B0B8D /* CityName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityName.swift; sourceTree = "<group>"; };
 		07AEA5FA2AF0F0410029CA76 /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
+		D901B4AF2AF3568200670BD4 /* LikeDislike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeDislike.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				0751D6012AE77CB1002449D2 /* TS_VisionApp.swift */,
 				0751D6032AE77CB1002449D2 /* ContentView.swift */,
+				D901B4AF2AF3568200670BD4 /* LikeDislike.swift */,
 				0751D62B2AE78443002449D2 /* PageTwo.swift */,
 				07A368112AF0E418005B0B8D /* Components */,
 				0751D6052AE77CB2002449D2 /* Assets.xcassets */,
@@ -288,6 +291,7 @@
 				075C797B2AEF96DC00D47AA6 /* WeatherComponent.swift in Sources */,
 				0751D6042AE77CB1002449D2 /* ContentView.swift in Sources */,
 				0751D62C2AE78443002449D2 /* PageTwo.swift in Sources */,
+				D901B4B02AF3568200670BD4 /* LikeDislike.swift in Sources */,
 				0751D6022AE77CB1002449D2 /* TS_VisionApp.swift in Sources */,
 				07A368152AF0E9A6005B0B8D /* CityName.swift in Sources */,
 				07AEA5FB2AF0F0410029CA76 /* BackgroundColor.swift in Sources */,
