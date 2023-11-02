@@ -11,7 +11,7 @@ struct LikeDislike: View {
     @State private var counter = 0
     var body: some View {
         NavigationView{
-            VStack(spacing: 80) {
+            VStack(spacing: 40) {
                 
                 if counter >= 10
                 {
@@ -35,7 +35,17 @@ struct LikeDislike: View {
                 Text("Likes \(counter)")
                     .font(.system(size: 25))
                 
-                HStack(spacing: 60){
+                Button {
+                    counter = 0
+                }label: {
+                    Text("Reset")
+                        .padding()
+                        .background(Color(.blue))
+                        .cornerRadius(35)
+                        .foregroundColor(.white)
+                }
+                
+                HStack(spacing: 100){
                     Button {
                         counter += 1
                     } label: {
@@ -55,6 +65,8 @@ struct LikeDislike: View {
                             .frame(width: 80,height: 80)
                                 }
                             }
+                Spacer()
+                Spacer()
                         
                     }
                 }
